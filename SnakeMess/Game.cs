@@ -80,7 +80,7 @@ namespace SnakeMess
                         Apple.SetAppleOnField();
                     }
                 }
-                if (!InUse)
+                if (!State.InUse)
                 {
                     Coords.RemoveAt(0);
                     foreach (var x in Coords)
@@ -95,14 +95,14 @@ namespace SnakeMess
                 if (State.GameOver) continue;
 
                 DrawChar(Player.HeadCoord, '0');
-                if (!InUse)
+                if (!State.InUse)
                 {
                     DrawChar(Player.TailCoord, ' ');
                 }
                 else
                 {
                     Apple.DrawApple();
-                    InUse = false;
+                    State.InUse = false;
                 }
                 Coords.Add(Player.NewHeadCoord);
                 DrawChar(Player.NewHeadCoord, '@');

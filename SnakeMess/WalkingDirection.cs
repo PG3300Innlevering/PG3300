@@ -11,16 +11,10 @@ namespace SnakeMess
 		public short LastDirection { get; set; }
         public WalkingDirection()
         {
-			Direction = (short)Directions.Down;
-        }
+			Direction = 2;      // 0 = up, 1 = right, 2 = down, 3 = left
 
-        // 0 = up, 1 = right, 2 = down, 3 = left
-        private enum Directions
-        {
-            Up,
-            Right,
-            Down,
-            Left
-        }
-    }
+		}
+
+
+	}
 }
