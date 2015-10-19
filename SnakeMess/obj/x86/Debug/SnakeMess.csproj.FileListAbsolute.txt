@@ -28,3 +28,8 @@ C:\Users\edvin\Google Drive\Programmvarearkitektur\PG3300_Innlevering_Kode\Snake
 C:\Users\edvin\Google Drive\Programmvarearkitektur\PG3300_Innlevering_Kode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
 C:\Users\edvin\Google Drive\Programmvarearkitektur\PG3300_Innlevering_Kode\PG3300-Innelevering\SnakeMess\obj\x86\Debug\SnakeMess.exe
 C:\Users\edvin\Google Drive\Programmvarearkitektur\PG3300_Innlevering_Kode\PG3300-Innelevering\SnakeMess\obj\x86\Debug\SnakeMess.pdb
+C:\Users\edvin\Desktop\PG3300\SnakeMess\obj\x86\Debug\SnakeMess.exe
+C:\Users\edvin\Desktop\PG3300\SnakeMess\obj\x86\Debug\SnakeMess.pdb
+C:\Users\edvin\Desktop\PG3300\SnakeMess\bin\Debug\SnakeMess.exe
+C:\Users\edvin\Desktop\PG3300\SnakeMess\bin\Debug\SnakeMess.pdb
+C:\Users\edvin\Desktop\PG3300\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache

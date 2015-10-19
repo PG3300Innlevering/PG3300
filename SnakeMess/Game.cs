@@ -17,7 +17,7 @@ using System.Reflection;
 
 namespace SnakeMess
 {
-	public class Game : WalkingDirection
+	public class Game : Board
     {
         public static Coord AppleCoord = new Coord();
         public static AppleItem Apple = new AppleItem();
@@ -29,7 +29,7 @@ namespace SnakeMess
 		public Game()
         {
 			
-			LastDirection = Direction;
+			Input.LastDirection = Input.Direction;
 
 			Coords = new List<Coord> {new Coord(10, 10), new Coord(10, 10), new Coord(10, 10), new Coord(10, 10) };
 
@@ -48,7 +48,7 @@ namespace SnakeMess
 					
 				Player = new SnakePlayer();
 
-				switch (Direction)
+				switch (Input.Direction)
 				{
 					case 0:
 						Player.NewHeadCoord.Y--;
@@ -106,7 +106,7 @@ namespace SnakeMess
                 }
                 Coords.Add(Player.NewHeadCoord);
                 DrawChar(Player.NewHeadCoord, '@');
-                LastDirection = Direction;
+                Input.LastDirection = Input.Direction;
 
             }
         }

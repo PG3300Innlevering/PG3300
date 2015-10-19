@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SnakeMess
 {
-    public class WalkingDirection : Board
+    public class WalkingDirection
     {
         public short Direction { get; set; } 
 		public short LastDirection { get; set; }
