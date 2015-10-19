@@ -20,7 +20,7 @@ namespace SnakeMess
                 var freeSpot = Game.Coords.All(i => i.X != Game.AppleCoord.X || i.Y != Game.AppleCoord.Y);
                 if (!freeSpot) continue;
                 DrawApple();
-				Game.State.InUse = true;
+				Game.State.AppleEaten = true;
 				break;
             }
         }

@@ -10,14 +10,14 @@ namespace SnakeMess
     {
         public bool GameOver { get; set; }
         public bool Paused { get; set; }
-        public bool InUse { get; set; }
+        public bool AppleEaten { get; set; }
 
         // Sets the game state to running if this is called.
         public GameState()
         {
             GameOver = false;
             Paused = false;
-	        InUse = false;
+	        AppleEaten = false;
         }
 
 		public void SetPause()
