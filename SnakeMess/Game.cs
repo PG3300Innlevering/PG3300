@@ -38,11 +38,11 @@ namespace SnakeMess
 			var timer = new Stopwatch();
 			timer.Start();
 
-			while (!GameOver)
+			while (!State.GameOver)
             {
                 Input.CheckInput();
 
-                if (Paused) continue;
+                if (State.Paused) continue;
                 if (timer.ElapsedMilliseconds < 100) continue;
                 timer.Restart();
 					
@@ -65,16 +65,16 @@ namespace SnakeMess
 				}
 
 				if (Player.NewHeadCoord.X < 0 || Player.NewHeadCoord.X >= BoardW)
-                    GameOver = true;
+                    State.GameOver = true;
                 else if (Player.NewHeadCoord.Y < 0 || Player.NewHeadCoord.Y >= BoardH)
-                    GameOver = true;
+                    State.GameOver = true;
 
 
                 if (Player.NewHeadCoord.X == AppleCoord.X && Player.NewHeadCoord.Y == AppleCoord.Y)
                 {
                     if (Coords.Count + 1 >= BoardW * BoardH)
                         // No more room to place apples -- game over.
-                        GameOver = true;
+                        State.GameOver = true;
                     else
                     {
                         Apple.SetAppleOnField();
@@ -87,12 +87,12 @@ namespace SnakeMess
                         if (x.X == Player.NewHeadCoord.X && x.Y == Player.NewHeadCoord.Y)
                         {
                             // Death by accidental self-cannibalism.
-                            GameOver = true;
+                            State.GameOver = true;
                             break;
                         }
                 }
 
-                if (GameOver) continue;
+                if (State.GameOver) continue;
 
                 DrawChar(Player.HeadCoord, '0');
                 if (!InUse)
