@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SnakeMess.AppleItem">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABAAAAAAAAIAE=</HashCode>
+      <FileName>AppleItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.Board">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Board.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.Coord" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Coord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.Game">
+    <Position X="13.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAE=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.GameState">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.Input">
+    <Position X="10" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.SnakePlayer">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAgAAAAAIAAAAAAQAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>SnakePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.WalkingDirection">
+    <Position X="7.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>WalkingDirection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.Controller" Collapsed="true">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.ISnakePlayer" Collapsed="true">
+    <Position X="16.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAgAAAAAIAAAAAAQAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ISnakePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.PlayField">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABUAAAAAAAAAAAkIAAAAAAIAAAAEABAAAAAE=</HashCode>
+      <FileName>PlayField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.Snake">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIgAAEAAIKAAAAAQAQAAAACAAECAAABAAAA=</HashCode>
+      <FileName>Snake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnakeMess.SnakeGame">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAAAAgCAAAAICAAACAgAAAAAAAAAQQAABEAAAAA=</HashCode>
+      <FileName>SnakeGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SnakeMess.SnakeDirection" Collapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>WalkingDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

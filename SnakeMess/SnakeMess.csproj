@@ -45,13 +45,23 @@
   <ItemGroup>
     <Compile Include="AppleItem.cs" />
     <Compile Include="Board.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="Coord.cs" />
     <Compile Include="GameState.cs" />
     <Compile Include="Input.cs" />
+    <Compile Include="ISnakePlayer.cs" />
+    <Compile Include="PlayField.cs" />
+    <Compile Include="Snake.cs" />
+    <Compile Include="SnakeGame.cs" />
     <Compile Include="SnakePlayer.cs" />
     <Compile Include="WalkingDirection.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
