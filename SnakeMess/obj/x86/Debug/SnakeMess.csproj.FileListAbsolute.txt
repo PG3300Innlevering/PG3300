@@ -33,3 +33,5 @@ C:\Users\edvin\Desktop\PG3300\SnakeMess\obj\x86\Debug\SnakeMess.pdb
 C:\Users\edvin\Desktop\PG3300\SnakeMess\bin\Debug\SnakeMess.exe
 C:\Users\edvin\Desktop\PG3300\SnakeMess\bin\Debug\SnakeMess.pdb
 C:\Users\edvin\Desktop\PG3300\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+C:\Users\Jacklyn\Documents\GitHub\PG3300\SnakeMess\obj\x86\Debug\SnakeMess.exe
+C:\Users\Jacklyn\Documents\GitHub\PG3300\SnakeMess\obj\x86\Debug\SnakeMess.pdb
