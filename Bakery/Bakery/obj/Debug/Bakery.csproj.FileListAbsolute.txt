@@ -1,1 +1,2 @@
 c:\users\jacklyn\documents\visual studio 2015\Projects\Bakery\Bakery\bin\Debug\Bakery.exe.config
+C:\Users\Jacklyn\Documents\GitHub\PG3300\Bakery\Bakery\bin\Debug\Bakery.exe.config

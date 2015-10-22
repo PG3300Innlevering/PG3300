@@ -8,5 +8,16 @@ namespace Bakery
 {
     class Items
     {
+        public void Cookie (){
+            Console.Write("Bakery made cookie ");
+        }
+
+        public void Biscuit(){
+            Console.Write("Bakery made biscuit ");
+        }
+
+        public void Cracker(){
+            Console.Write("Bakery made cracker ");
+        }
     }
 }

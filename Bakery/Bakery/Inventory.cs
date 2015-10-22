@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bakery
 {
-    class Inventory
+    class Inventory : CookieGenerator
     {
     }
 }

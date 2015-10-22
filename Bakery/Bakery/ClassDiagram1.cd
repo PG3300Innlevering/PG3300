@@ -8,17 +8,24 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Bakery.Inventory" Collapsed="true">
-    <Position X="4.5" Y="2" Width="1.5" />
+    <Position X="4.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Bakery.Items" Collapsed="true">
-    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Items.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bakery.CookieGenerator" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Items.cs</FileName>
+      <FileName>CookieGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
