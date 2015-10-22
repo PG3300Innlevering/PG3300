@@ -3,7 +3,7 @@
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="0761e810-03dc-425b-b871-7df3737ae6d1" name="Bakery" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="7b091374-3ce5-4b86-8eb7-c2f92674b98c" />
+        <elementDefinition Id="365bf824-725e-49e6-94cb-c2859a8e1b2d" />
         <targetEnds>
           <association Id="d9cb1e76-a1b1-437b-8804-cb5c06c724eb" isDerived="false" sourceEndRoleName="Bakery" targetEndRoleName="Cookies" isLeaf="false" isAbstract="false">
             <interfaceMoniker Id="0d548cf2-6c83-42b5-ad6c-f5234912a655" LastKnownName="Cookies" />
@@ -22,11 +22,24 @@
             <elementDefinition Id="8440932f-657b-41d1-9315-7c1235b8c881" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="4764bd9b-b379-44dc-9014-81a116fa4dd5" name="SellCookieToCustomer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="133f91e8-2d8c-424e-b116-83f10e6b5573" />
+          </operation>
+          <operation Id="696dc405-d4ae-44e8-ac27-702225aeb1ed" name="BakeCookie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8e182c82-50a8-41da-b134-d4d9b00a57b2" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="059b81b0-15f0-4f47-b827-3550543b9dbf" name="Clients" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="6e36a1d4-732d-4959-9404-2dd9794967fa" />
+      <Interface Id="059b81b0-15f0-4f47-b827-3550543b9dbf" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="858e4f7e-7118-4df8-ae3a-3cf0983c209c" />
+        <ownedAttributes>
+          <property Id="0f4eaff3-3902-4e67-b611-e56fae451782" name="bool HasCookie" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="85e2c802-b4f2-4f7d-8931-0e31db217110" />
+          </property>
+        </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -34,7 +47,7 @@
         <elementDefinition Id="75ee6162-8721-49d2-83eb-b4376e979ae3" />
         <suppliersInternal>
           <interfaceRealization Id="80d076b2-3d35-41ff-a484-0f7e856ad226">
-            <interfaceMoniker Id="059b81b0-15f0-4f47-b827-3550543b9dbf" LastKnownName="Clients" />
+            <interfaceMoniker Id="059b81b0-15f0-4f47-b827-3550543b9dbf" LastKnownName="Customer" />
             <elementDefinition Id="921888d4-2cf6-478b-930c-bdea285d5425" />
           </interfaceRealization>
         </suppliersInternal>
@@ -45,7 +58,7 @@
         <elementDefinition Id="4342130a-5a18-4e7e-bbb9-4e206f4f9cc4" />
         <suppliersInternal>
           <interfaceRealization Id="27c69926-973f-4a24-a82e-90fd7b630d3f">
-            <interfaceMoniker Id="059b81b0-15f0-4f47-b827-3550543b9dbf" LastKnownName="Clients" />
+            <interfaceMoniker Id="059b81b0-15f0-4f47-b827-3550543b9dbf" LastKnownName="Customer" />
             <elementDefinition Id="c9a06d6d-e4eb-48af-bbfc-bf1b459476b8" />
           </interfaceRealization>
         </suppliersInternal>
@@ -56,7 +69,7 @@
         <elementDefinition Id="010fd7d4-c378-4bad-ac24-44ebfc2d4e67" />
         <suppliersInternal>
           <interfaceRealization Id="b947f737-ac00-4921-a097-8044ada207b2">
-            <interfaceMoniker Id="059b81b0-15f0-4f47-b827-3550543b9dbf" LastKnownName="Clients" />
+            <interfaceMoniker Id="059b81b0-15f0-4f47-b827-3550543b9dbf" LastKnownName="Customer" />
             <elementDefinition Id="b2cb1e0e-f560-4ccf-99e9-aa516e0a4b26" />
           </interfaceRealization>
         </suppliersInternal>
@@ -64,23 +77,55 @@
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="0d548cf2-6c83-42b5-ad6c-f5234912a655" name="Cookies" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="bf163ffb-e32f-403f-95c6-fdd6b130e44e" />
+        <elementDefinition Id="21cebb41-2b56-4d80-98eb-f192e8c33c3c" />
+        <ownedAttributes>
+          <property Id="f34c27f3-37de-4572-9462-c943694edaaf" name="int CookieNum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="21fc5ed4-39dc-4c05-911c-d518516242fa" />
+          </property>
+          <property Id="9e9c6524-379e-4d13-b136-e2beebb7abc2" name="String Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="67bfbcb9-7f90-4bb8-961f-f833c556a147" />
+          </property>
+          <property Id="63540594-57ce-43dc-8e59-450bd26eb61a" name="bool Sold" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b0a63b33-1d73-44be-951d-bf78848c3287" />
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="a7c1f837-1aec-4b3c-9fff-e5aea0e19ee2" name="ToString" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="478a4ef5-1a41-4734-bb23-2b846d279ff6" />
+          </operation>
+        </ownedOperations>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="6e24045f-537d-4991-8e80-0d8423dbb399" name="Cookie" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="1a952726-d4f1-494b-96bd-7cb05f5d39cb" />
+        <elementDefinition Id="2b9ea047-34f9-4239-a87e-12e6ca6fbaf1" />
         <suppliersInternal>
           <interfaceRealization Id="dac5bfd5-3200-4a6e-a68e-6d35c3943f34">
             <interfaceMoniker Id="0d548cf2-6c83-42b5-ad6c-f5234912a655" LastKnownName="Cookies" />
             <elementDefinition Id="a3d4ee35-25b4-48bf-aefe-0ef4feea340a" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="ae4f98c2-33eb-4bc7-96d3-8259f477a510" name="int CookieNum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="42248c03-8c51-49f8-a97a-2416b1f3edac" />
+          </property>
+          <property Id="f12eb058-1c45-4855-89b2-d631f89d5289" name="String Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64b8d3e3-2b7d-41f3-b279-ebcf3662445d" />
+          </property>
+          <property Id="90d32574-ece9-4a32-8d02-e3394d660811" name="bool Sold" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="344b4e0a-7dc7-4050-8a58-a72f27335482" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="cc697924-a1d4-4c97-80eb-b83c075211de" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="983517b3-3c8f-4772-97f3-688850965a22" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="fd6bdf2f-3209-4417-83de-ac088997037b" name="Decorator" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="495616eb-e237-49a9-a264-fb5ff00ad288" />
+        <elementDefinition Id="bd041741-9317-420d-829f-42b0dc17ce06" />
         <generalsInternal>
           <generalization Id="b476043c-293f-4e40-9395-c9feecec385e" isSubstitutable="false">
             <interfaceMoniker Id="0d548cf2-6c83-42b5-ad6c-f5234912a655" LastKnownName="Cookies" />
@@ -105,39 +150,59 @@
             <elementDefinition Id="824565aa-a4cf-4214-a5b4-5b4bb5da8074" />
           </association>
         </targetEnds>
+        <ownedOperations>
+          <operation Id="c4ebaa87-b2e7-4c45-aa1c-b05a11aad9b1" name="AddSprinkle" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e58d77ee-2b36-4908-a013-59b36008c836" />
+          </operation>
+        </ownedOperations>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="c9b0f222-401b-4880-8ac5-04f8437e217d" name="Raisins" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="3c7e4dd4-e126-4c0e-82af-e51a8684e54f" />
+        <elementDefinition Id="efbfc8e7-2e96-4bec-b0ce-17c0f06bdb98" />
         <suppliersInternal>
           <interfaceRealization Id="fd847ab1-2ef1-493b-86d2-ebb85afe4dc4">
             <interfaceMoniker Id="fd6bdf2f-3209-4417-83de-ac088997037b" LastKnownName="Decorator" />
             <elementDefinition Id="fd02f119-5a8c-4bb8-bddd-271643cbde5c" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="b60c7dba-1f26-474a-af69-697e4b8eb254" name="String Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6b1ab131-140e-4acb-a0b2-7870182cc0e7" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="abb017e2-2854-441e-a09a-8402775f8e7c" name="ChocolateChips" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="e3a8103b-ad78-4af5-8ae8-cc00a2bb9cb1" />
+        <elementDefinition Id="7b9ab9ac-9ac5-4f84-8688-55ad023155f2" />
         <suppliersInternal>
           <interfaceRealization Id="01cdf436-ca3b-4b6d-a960-08769c50fbc4">
             <interfaceMoniker Id="fd6bdf2f-3209-4417-83de-ac088997037b" LastKnownName="Decorator" />
             <elementDefinition Id="fa9867b3-f79a-460d-84c6-7b56e8182ac8" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="5bdaa97a-8900-483e-98fd-a7e20327de71" name="String Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="db772941-72be-4312-8ee6-53ebad49d3f8" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="6a624790-8ef2-4757-96ed-5a2802916727" name="ShardsOfGlass" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="8107d2a3-9271-4eb5-bc48-5f1eb3a0291a" />
+        <elementDefinition Id="7ac2da5f-64e4-44b6-973c-b0e60aeee634" />
         <suppliersInternal>
           <interfaceRealization Id="a0a1a26c-fe7a-4b45-b8a4-1bffad871a89">
             <interfaceMoniker Id="fd6bdf2f-3209-4417-83de-ac088997037b" LastKnownName="Decorator" />
             <elementDefinition Id="20bd9007-aa24-405d-93d6-6c7b3e573576" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="aa5574ab-5055-490e-9f81-8b048c70d512" name="String Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e6ff1042-7623-403d-ad55-36759b4dc772" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

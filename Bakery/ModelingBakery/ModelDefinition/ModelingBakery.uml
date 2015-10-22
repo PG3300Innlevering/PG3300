@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="350aab1e-2afa-43bc-a4f5-b5879ea18287"
   name="ModelingBakery" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -21,24 +21,259 @@
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
+  <class
+    Id="365bf824-725e-49e6-94cb-c2859a8e1b2d"
+    name="Bakery"
+    isAbstract="false"
+    isLeaf="false"
+    isActiveClass="false">
+    <elementDefinition
+      Id="7b091374-3ce5-4b86-8eb7-c2f92674b98c" />
+    <ownedOperationsInternal>
+      <operation
+        Id="133f91e8-2d8c-424e-b116-83f10e6b5573"
+        name="SellCookieToCustomer"
+        isLeaf="false"
+        isStatic="false"
+        isAbstract="false"
+        concurrency="Sequential"
+        isQuery="false" />
+      <operation
+        Id="8e182c82-50a8-41da-b134-d4d9b00a57b2"
+        name="BakeCookie"
+        isLeaf="false"
+        isStatic="false"
+        isAbstract="false"
+        concurrency="Sequential"
+        isQuery="false" />
+    </ownedOperationsInternal>
+  </class>
+  <Interface
+    Id="21cebb41-2b56-4d80-98eb-f192e8c33c3c"
+    name="Cookies"
+    isAbstract="false"
+    isLeaf="false">
+    <elementDefinition
+      Id="bf163ffb-e32f-403f-95c6-fdd6b130e44e" />
+    <ownedAttributes>
+      <property
+        Id="21fc5ed4-39dc-4c05-911c-d518516242fa"
+        name="int CookieNum"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+      <property
+        Id="67bfbcb9-7f90-4bb8-961f-f833c556a147"
+        name="String Name"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+      <property
+        Id="b0a63b33-1d73-44be-951d-bf78848c3287"
+        name="bool Sold"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+    </ownedAttributes>
+    <ownedOperations>
+      <operation
+        Id="478a4ef5-1a41-4734-bb23-2b846d279ff6"
+        name="ToString"
+        isLeaf="false"
+        isStatic="false"
+        isAbstract="true"
+        concurrency="Sequential"
+        isQuery="false" />
+    </ownedOperations>
+  </Interface>
+  <class
+    Id="2b9ea047-34f9-4239-a87e-12e6ca6fbaf1"
+    name="Cookie"
+    isAbstract="false"
+    isLeaf="false"
+    isActiveClass="false">
+    <elementDefinition
+      Id="1a952726-d4f1-494b-96bd-7cb05f5d39cb" />
+    <ownedAttributesInternal>
+      <property
+        Id="42248c03-8c51-49f8-a97a-2416b1f3edac"
+        name="int CookieNum"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+      <property
+        Id="64b8d3e3-2b7d-41f3-b279-ebcf3662445d"
+        name="String Name"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+      <property
+        Id="344b4e0a-7dc7-4050-8a58-a72f27335482"
+        name="bool Sold"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+    </ownedAttributesInternal>
+    <ownedOperationsInternal>
+      <operation
+        Id="983517b3-3c8f-4772-97f3-688850965a22"
+        name="ToString"
+        isLeaf="false"
+        isStatic="false"
+        isAbstract="false"
+        concurrency="Sequential"
+        isQuery="false" />
+    </ownedOperationsInternal>
+  </class>
+  <Interface
+    Id="bd041741-9317-420d-829f-42b0dc17ce06"
+    name="Decorator"
+    isAbstract="false"
+    isLeaf="false">
+    <elementDefinition
+      Id="495616eb-e237-49a9-a264-fb5ff00ad288" />
+    <ownedOperations>
+      <operation
+        Id="e58d77ee-2b36-4908-a013-59b36008c836"
+        name="AddSprinkle"
+        isLeaf="false"
+        isStatic="false"
+        isAbstract="true"
+        concurrency="Sequential"
+        isQuery="false" />
+    </ownedOperations>
+  </Interface>
+  <Interface
+    Id="858e4f7e-7118-4df8-ae3a-3cf0983c209c"
+    name="Customer"
+    isAbstract="false"
+    isLeaf="false">
+    <elementDefinition
+      Id="6e36a1d4-732d-4959-9404-2dd9794967fa" />
+    <ownedAttributes>
+      <property
+        Id="85e2c802-b4f2-4f7d-8931-0e31db217110"
+        name="bool HasCookie"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+    </ownedAttributes>
+  </Interface>
+  <class
+    Id="efbfc8e7-2e96-4bec-b0ce-17c0f06bdb98"
+    name="Raisins"
+    isAbstract="false"
+    isLeaf="false"
+    isActiveClass="false">
+    <elementDefinition
+      Id="3c7e4dd4-e126-4c0e-82af-e51a8684e54f" />
+    <ownedAttributesInternal>
+      <property
+        Id="6b1ab131-140e-4acb-a0b2-7870182cc0e7"
+        name="String Name"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+    </ownedAttributesInternal>
+  </class>
+  <class
+    Id="7b9ab9ac-9ac5-4f84-8688-55ad023155f2"
+    name="ChocolateChips"
+    isAbstract="false"
+    isLeaf="false"
+    isActiveClass="false">
+    <elementDefinition
+      Id="e3a8103b-ad78-4af5-8ae8-cc00a2bb9cb1" />
+    <ownedAttributesInternal>
+      <property
+        Id="db772941-72be-4312-8ee6-53ebad49d3f8"
+        name="String Name"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+    </ownedAttributesInternal>
+  </class>
+  <class
+    Id="7ac2da5f-64e4-44b6-973c-b0e60aeee634"
+    name="ShardsOfGlass"
+    isAbstract="false"
+    isLeaf="false"
+    isActiveClass="false">
+    <elementDefinition
+      Id="8107d2a3-9271-4eb5-bc48-5f1eb3a0291a" />
+    <ownedAttributesInternal>
+      <property
+        Id="e6ff1042-7623-403d-ad55-36759b4dc772"
+        name="String Name"
+        isLeaf="false"
+        isStatic="false"
+        isReadOnly="false"
+        isUnique="false"
+        isDerived="false"
+        isDerivedUnion="false"
+        aggregation="None"
+        isComposite="false" />
+    </ownedAttributesInternal>
+  </class>
 </modelStoreModel>
