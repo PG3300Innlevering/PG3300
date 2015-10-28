@@ -6,18 +6,12 @@ using System.Threading.Tasks;
 
 namespace Bakery
 {
-    class Items
+    class Cookie
     {
-        public void Cookie (){
-            Console.Write("Bakery made cookie ");
-        }
-
-        public void Biscuit(){
-            Console.Write("Bakery made biscuit ");
-        }
-
-        public void Cracker(){
-            Console.Write("Bakery made cracker ");
+        public int count;
+        public Cookie(int count)
+        {
+            this.count = count;
         }
     }
 }

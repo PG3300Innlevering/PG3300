@@ -1,3 +1,6 @@
-c:\users\jacklyn\documents\visual studio 2015\Projects\Bakery\Bakery\bin\Debug\Bakery.exe.config
-C:\Users\Jacklyn\Documents\GitHub\PG3300\Bakery\Bakery\bin\Debug\Bakery.exe.config
-C:\Users\bogsk_000\Documents\GitHub\PG3300\Bakery\Bakery\bin\Debug\Bakery.exe.config
+c:\users\donkey\documents\visual studio 2015\Projects\Bakery\Bakery\bin\Debug\Bakery.exe.config
+c:\users\donkey\documents\visual studio 2015\Projects\Bakery\Bakery\bin\Debug\Bakery.exe
+c:\users\donkey\documents\visual studio 2015\Projects\Bakery\Bakery\bin\Debug\Bakery.pdb
+c:\users\donkey\documents\visual studio 2015\Projects\Bakery\Bakery\obj\Debug\Bakery.exe
+c:\users\donkey\documents\visual studio 2015\Projects\Bakery\Bakery\obj\Debug\Bakery.pdb
+c:\users\donkey\documents\visual studio 2015\Projects\Bakery\Bakery\obj\Debug\Bakery.csprojResolveAssemblyReference.cache

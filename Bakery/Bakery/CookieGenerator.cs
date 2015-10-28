@@ -2,26 +2,46 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
+using System.Timers;
 
 namespace Bakery
 {
-    class CookieGenerator : Items
+    class CookieGenerator
     {
-        public static void CookieType()
-        {
-            Random ct = new Random();
-            int type = ct.Next(0, 3);
+        
+        static List<Cookie> Cookies = new List<Cookie>();
+        private static object obj = new Object(); 
+        
+      
 
-            switch (type)
+        public static void Start()
+        {
+            System.Timers.Timer time = new System.Timers.Timer(667);
+            time.Elapsed += new ElapsedEventHandler(CreateCookie);
+            time.Start();
+        }
+
+        static void CreateCookie(object o, ElapsedEventArgs e)
+        {
+            int cookieCount = 0;
+            cookieCount++;
+                Cookies.Add(new Cookie(cookieCount));
+                Console.WriteLine("Bakery made cookie #" + cookieCount);
+        }
+
+        public static void SellCookieTo(Customer customer)
+        {
+            lock (obj)
             {
-                case 0:
-                    break;
-                case 1:
-                    break;
-                case 2:
-                    break;
+                if (Cookies.Count > 0)
+                {
+                    int i = Cookies.Count - 1;
+                    Console.WriteLine("\t\t\t" + customer.Name + " received cookie #");
+                    Cookies.RemoveAt(i);
+                }
             }
+
         }
     }
 }
